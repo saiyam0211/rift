@@ -7,6 +7,7 @@ Automatically applies SEO, GEO, and social media meta tags to all HTML pages.
 import os
 import re
 import json
+import shutil
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -305,6 +306,25 @@ def rename_page_to_index(base_dir: Path) -> bool:
         return False
 
 
+def create_index_in_subdirectories(base_dir: Path) -> int:
+    """Create index.html files in subdirectories from page.html files."""
+    created = 0
+    
+    # Find all subdirectories with page.html files
+    for subdir in base_dir.iterdir():
+        if subdir.is_dir() and not subdir.name.startswith('.'):
+            page_html = subdir / "page.html"
+            index_html = subdir / "index.html"
+            
+            if page_html.exists() and not index_html.exists():
+                # Copy page.html to index.html
+                shutil.copy2(page_html, index_html)
+                print(f"✅ Created {index_html.relative_to(base_dir)}")
+                created += 1
+    
+    return created
+
+
 def main():
     """Main function."""
     print("🚀 Starting SEO Enhancement Script for RIFT '26\n")
@@ -313,10 +333,18 @@ def main():
     base_dir = Path(__file__).parent.absolute()
     print(f"📁 Working directory: {base_dir}\n")
     
-    # Step 1: Rename page.html to index.html
-    print("Step 1: Renaming page.html to index.html...")
+    # Step 1: Rename page.html to index.html in root
+    print("Step 1: Renaming page.html to index.html in root...")
     rename_page_to_index(base_dir)
     print()
+    
+    # Step 1.5: Create index.html files in subdirectories
+    print("Step 1.5: Creating index.html files in subdirectories...")
+    created = create_index_in_subdirectories(base_dir)
+    if created > 0:
+        print(f"✅ Created {created} index.html file(s) in subdirectories\n")
+    else:
+        print("ℹ️  No subdirectories needed index.html files\n")
     
     # Step 2: Find and process all HTML files
     print("Step 2: Processing HTML files...\n")
