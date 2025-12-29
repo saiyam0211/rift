@@ -14,25 +14,28 @@ from typing import Dict, Optional
 # Configuration
 DOMAIN = "https://rift.pwioi.club"
 INSTAGRAM_USERNAME = "rift.pwioi"
+INSTAGRAM_URL = "https://instagram.com/rift.pwioi"
+UNSTOP_REGISTRATION_URL = "https://unstop.com/hackathons/rift-26-hackathon-physics-wallah-institute-of-innovation-1603718"
+SUPPORT_EMAIL = "rift_support@pwioi.com"
 SITE_NAME = "RIFT '26"
-OG_IMAGE = "https://framerusercontent.com/assets/WiwJHXh582aLW0B0Bmamge2U.webp"
+OG_IMAGE = "/images/OG_image.png"
 
 # Page-specific SEO configurations
 PAGE_CONFIGS = {
     "index.html": {
-        "title": "RIFT '26 - Pan India 24-Hour Open Innovation Hackathon",
-        "description": "Join RIFT, the ultimate 24-hour Open Innovation hackathon by PW IOI. Compete live in Bengaluru, Pune, Noida, & Lucknow on Jan 21-22, 2026. 600+ Devs. Big Prizes. Make a Shift.",
+        "title": "RIFT '26 - Pan India 24-Hour Open Innovation Hackathon | Register Now",
+        "description": "Join RIFT, the ultimate 24-hour Open Innovation hackathon by PW IOI. Compete live in Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026. 2000+ Devs. Big Prizes. Register on Unstop. Make a Shift.",
         "canonical": "/",
         "og_title": "RIFT '26 - Pan India 24-Hour Open Innovation Hackathon",
-        "og_description": "Join RIFT, the ultimate 24-hour Open Innovation hackathon by PW IOI. Compete live in Bengaluru, Pune, Noida, & Lucknow on Jan 21-22, 2026. 600+ Devs. Big Prizes. Make a Shift.",
+        "og_description": "Join RIFT, the ultimate 24-hour Open Innovation hackathon by PW IOI. Compete live in Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026. 2000+ Devs. Big Prizes. Make a Shift.",
         "has_structured_data": True
     },
     "agenda/page.html": {
         "title": "Agenda - RIFT '26 Pan India Hackathon",
-        "description": "Detailed agenda for RIFT '26, the 24-hour Open Innovation hackathon by PW IOI. Explore schedules for Bengaluru, Pune, Noida, & Lucknow on Jan 21-22, 2026.",
+        "description": "Detailed agenda for RIFT '26, the 24-hour Open Innovation hackathon by PW IOI. Explore schedules for Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026.",
         "canonical": "/agenda",
         "og_title": "Agenda - RIFT '26 Pan India Hackathon",
-        "og_description": "Detailed agenda for RIFT '26, the 24-hour Open Innovation hackathon by PW IOI. Explore schedules for Bengaluru, Pune, Noida, & Lucknow on Jan 21-22, 2026."
+        "og_description": "Detailed agenda for RIFT '26, the 24-hour Open Innovation hackathon by PW IOI. Explore schedules for Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026."
     },
     "speakers/page.html": {
         "title": "Speakers - RIFT '26 Pan India Hackathon",
@@ -43,17 +46,17 @@ PAGE_CONFIGS = {
     },
     "contact/page.html": {
         "title": "Contact Us - RIFT '26 Pan India Hackathon",
-        "description": "Get in touch with the RIFT '26 team. Contact us for queries regarding the 24-hour Open Innovation hackathon by PW IOI in Bengaluru, Pune, Noida, & Lucknow.",
+        "description": "Get in touch with the RIFT '26 team. Contact us for queries regarding the 24-hour Open Innovation hackathon by PW IOI in Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026.",
         "canonical": "/contact",
         "og_title": "Contact Us - RIFT '26 Pan India Hackathon",
-        "og_description": "Get in touch with the RIFT '26 team. Contact us for queries regarding the 24-hour Open Innovation hackathon by PW IOI in Bengaluru, Pune, Noida, & Lucknow."
+        "og_description": "Get in touch with the RIFT '26 team. Contact us for queries regarding the 24-hour Open Innovation hackathon by PW IOI in Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026."
     },
     "venue/page.html": {
         "title": "Venue - RIFT '26 Pan India Hackathon",
-        "description": "Discover the venues for RIFT '26, the 24-hour Open Innovation hackathon by PW IOI. Find locations in Bengaluru, Pune, Noida, & Lucknow on Jan 21-22, 2026.",
+        "description": "Discover the venues for RIFT '26, the 24-hour Open Innovation hackathon by PW IOI. Find locations in Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026.",
         "canonical": "/venue",
         "og_title": "Venue - RIFT '26 Pan India Hackathon",
-        "og_description": "Discover the venues for RIFT '26, the 24-hour Open Innovation hackathon by PW IOI. Find locations in Bengaluru, Pune, Noida, & Lucknow on Jan 21-22, 2026."
+        "og_description": "Discover the venues for RIFT '26, the 24-hour Open Innovation hackathon by PW IOI. Find locations in Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026."
     },
     "terms-and-conditions/page.html": {
         "title": "Terms and Conditions - RIFT '26 Pan India Hackathon",
@@ -69,9 +72,9 @@ STRUCTURED_DATA = {
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "RIFT '26 - Pan India 24-Hour Open Innovation Hackathon",
-    "description": "Join RIFT, the ultimate 24-hour Open Innovation hackathon by PW IOI. Compete live in Bengaluru, Pune, Noida, & Lucknow on Jan 21-22, 2026. 600+ Devs. Big Prizes. Make a Shift.",
-    "startDate": "2026-01-21T09:00:00+05:30",
-    "endDate": "2026-01-22T09:00:00+05:30",
+    "description": "Join RIFT, the ultimate 24-hour Open Innovation hackathon by PW IOI. Compete live in Bengaluru, Pune, Noida, & Lucknow on Feb 19-20, 2026. 2000+ Devs. Big Prizes. Make a Shift.",
+    "startDate": "2026-02-19T09:00:00+05:30",
+    "endDate": "2026-02-20T09:00:00+05:30",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": [
@@ -120,9 +123,26 @@ STRUCTURED_DATA = {
     "organizer": {
         "@type": "Organization",
         "name": "PW IOI",
-        "url": DOMAIN
+        "url": DOMAIN,
+        "email": SUPPORT_EMAIL,
+        "sameAs": [
+            INSTAGRAM_URL,
+            UNSTOP_REGISTRATION_URL
+        ]
     },
-    "url": DOMAIN
+    "url": DOMAIN,
+    "offers": {
+        "@type": "Offer",
+        "url": UNSTOP_REGISTRATION_URL,
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2025-12-01T00:00:00+05:30"
+    },
+    "performer": {
+        "@type": "Organization",
+        "name": "PW IOI"
+    }
 }
 
 
@@ -245,6 +265,10 @@ def add_seo_tags(content: str, config: Dict, file_path: str) -> str:
     seo_tags.append(get_or_create_meta_tag(f"@{INSTAGRAM_USERNAME}", name="twitter:site"))
     seo_tags.append(get_or_create_meta_tag(f"@{INSTAGRAM_USERNAME}", name="twitter:creator"))
     
+    # Additional meta tags
+    seo_tags.append(get_or_create_meta_tag("hackathon, innovation, coding, PW IOI, RIFT, tech event, Bengaluru, Pune, Noida, Lucknow", name="keywords"))
+    seo_tags.append(get_or_create_meta_tag("PW IOI", name="author"))
+    
     # Structured Data (only for main page)
     if config.get("has_structured_data"):
         structured_json = json.dumps(STRUCTURED_DATA, indent=2)
@@ -366,13 +390,17 @@ def main():
     
     print(f"\n✨ Done! Processed {processed} file(s), skipped {skipped} file(s)")
     print("\n📝 SEO enhancements applied:")
-    print("   • Meta tags (title, description, robots)")
+    print("   • Meta tags (title, description, robots, keywords)")
     print("   • Canonical URLs")
     print("   • GEO targeting (main page)")
     print("   • Open Graph tags")
     print("   • Twitter Card tags")
     print("   • Structured Data JSON-LD (main page)")
     print("   • Social media tags (@rift.pwioi)")
+    print(f"\n🔗 External Links:")
+    print(f"   • Registration: {UNSTOP_REGISTRATION_URL}")
+    print(f"   • Instagram: {INSTAGRAM_URL}")
+    print(f"   • Support: {SUPPORT_EMAIL}")
 
 
 if __name__ == "__main__":
